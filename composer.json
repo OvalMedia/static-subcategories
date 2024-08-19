@@ -1,0 +1,20 @@
+{
+  "name": "ovalmedia/static-subcategories",
+  "description": "Static subcategories",
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "Ole Hornauer",
+      "email": "oh@oval-media.de"
+    }
+  ],
+  "license": "MIT",
+  "autoload": {
+    "files": [
+      "src/registration.php"
+    ],
+    "psr-4": {
+      "OM\\StaticSubcategories\\": "src/"
+    }
+  }
+}
