@@ -1,1 +1,11 @@
-XXX
+<?php /** @var $block \OM\StaticSubcategories\Block\Subcategories */ ?>
+<?php $cats = $block->getCategories() ?>
+<?php if ($cats->count()): ?>
+    <ul>
+        <?php foreach ($cats as $cat): ?>
+            <li class="">
+                <a href="<?= $cat->getUrl() ?>"><?= $cat->getName() ?></a>
+            </li>
+        <?php endforeach ?>
+    </ul>
+<?php endif ?>

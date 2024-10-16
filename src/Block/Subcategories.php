@@ -63,9 +63,9 @@ class Subcategories extends \Magento\Framework\View\Element\Template
      * @param $category \Magento\Catalog\Model\Category
      * @return bool
      */
-    public function isCurrent($category)
+    public function isCurrent($category): bool
     {
-        return ($category->getId() == $this->getCurrentCategory()->getId() ? true : false);
+        return $category->getId() == $this->getCurrentCategory()->getId();
     }
 
     /**
